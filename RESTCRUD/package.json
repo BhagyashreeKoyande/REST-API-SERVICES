@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "test": "mocha 'test/apitest.js'"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "express-fileupload": "^1.1.7-alpha.3",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^7.2.0",
+    "supertest": "^4.0.2"
   }
 }

@@ -44,7 +44,7 @@ app.get("/information", function (req, res) {
   });
 });
 
-// Retrieve user with id
+// Retrieve user with id(GET)
 app.get("/mydata/:id", function (req, res) {
   let id = req.params.id;
 
@@ -66,7 +66,7 @@ app.get("/mydata/:id", function (req, res) {
   });
 });
 
-// Add a new Record
+// Add a new Record(POST)
 app.post("/adduser", function (req, res) {
   let fname = req.body.fname;
   let lname = req.body.lname;
@@ -153,3 +153,4 @@ app.post("/upload", function (req, res) {
 app.listen(3000, function () {
   console.log("Node app is running on port 3000");
 });
+module.exports=app;
